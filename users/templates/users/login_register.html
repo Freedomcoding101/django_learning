@@ -5,17 +5,6 @@
 
 {% if page == 'register' %}
 
-<!-- <h1>Register User</h1>
-
-<form method="POST" action="{% url 'register' %}">
-{% csrf_token %}
-{{form.as_p}}
-<input type="submit" value="Register User" />
-
-</form>
-
-<p>Already have an account? <a href = {% url 'login' %}>Login</a></p> -->
-
 <div class="auth">
     <div class="card">
     <div class="auth__header text-center">
@@ -67,7 +56,7 @@
         <p>Hello Developer, Welcome Back!</p>
       </div>
 
-      <form action="{% url 'login' %}" method="POST" class="form auth__form">
+      <form action="" method="POST" class="form auth__form">
         {% csrf_token %}
         <!-- Input:Username -->
         <div class="form__field">
